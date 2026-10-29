@@ -1,203 +1,122 @@
-# Awesome-Email-Marketing-Platform
+<div align="center">
 
-## Top Email Marketing Platform Ecosystem
+<img src="./assets/banner.svg" alt="Awesome Email Marketing Platform &amp; Infrastructure" width="100%" />
 
+# 📬 Awesome Email Marketing Platform [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+> A meticulously curated directory of top-tier **Email Marketing SaaS Platforms** and production-ready **Open-Source Campaign Infrastructure** for newsletters, lifecycle automation, and high-throughput transactional delivery.
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Email-Marketing-Platform?style=flat-square)](https://github.com/ishandutta2007/Awesome-Email-Marketing-Platform/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-*Focused on Newsletter Delivery, Marketing Automation & Self-Hosted Campaign Infrastructure*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Email Marketing Platforms**. These tools enable organizations to build subscriber lists, design campaigns, automate sequences, and analyze engagement—turning email from a manual chore into a scalable, measurable revenue channel.
-
-
-
-**Examples** include Shopify Email, Klaviyo, Omnisend, Mailchimp, ActiveCampaign, Drip, Brevo, Constant Contact, Campaign Monitor, and GetResponse (the category leaders).
-
-
-
-**Open-source emphasis**: Email Marketing is a domain where open-source tooling is **mature and genuinely competitive for core campaign sending**. **Listmonk** stands out as a modern, high-performance newsletter and list manager built in Go with a single binary and Postgres dependency, handling millions of subscribers with built-in analytics and templating . **Mautic** remains the deepest open-source marketing automation platform, with lead scoring, branching campaigns, and multi-channel touchpoints beyond email . **phpList** is the long-standing, no-license-fee option with a proven track record up to millions of recipients . **Keila** offers a clean, 100% open-source (AGPLv3) newsletter tool with no proprietary premium features . The critical caveat: **deliverability infrastructure** (IP warming, reputation management, inbox placement) still typically requires pairing with a sending provider like Amazon SES or Postmark—open-source software handles the campaign logic, not the inbox guarantee .
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Shopify Email](https://www.shopify.com/email)**  
-
-  Native email marketing app for Shopify merchants; includes a drag-and-drop editor, templates, automation flows, and Shopify data integration for product recommendations and segmentation.
-
-
-
-- **[Klaviyo](https://www.klaviyo.com/)**  
-
-  Data-driven email and SMS marketing platform popular with ecommerce brands; features deep segmentation, predictive analytics, and automated flows triggered by browsing and purchase behavior.
-
-
-
-- **[Omnisend](https://www.omnisend.com/)**  
-
-  Ecommerce-focused email and SMS marketing platform with automation workflows, product pickers, and segmentation based on store data.
-
-
-
-- **[Mailchimp](https://mailchimp.com/)**  
-
-  One of the most established email marketing platforms; offers campaign builder, automation, audience management, and a free tier for small lists.
-
-
-
-- **[ActiveCampaign](https://www.activecampaign.com/)**  
-
-  Email marketing and automation platform with visual automation builder, lead scoring, and CRM-lite features.
-
-
-
-- **[Drip](https://www.drip.com/)**  
-
-  Ecommerce CRM and email automation platform (now part of Drip Global); focuses on behavioral triggers and revenue attribution.
-
-
-
-- **[Brevo (formerly Sendinblue)](https://www.brevo.com/)**  
-
-  All-in-one marketing platform with email, SMS, chat, and CRM; offers a generous free tier and transactional email API.
-
-
-
-- **[Constant Contact](https://www.constantcontact.com/)**  
-
-  Email marketing platform aimed at small businesses; includes templates, list management, and basic automation.
-
-
-
-- **[Campaign Monitor](https://www.campaignmonitor.com/)**  
-
-  Email marketing platform known for design quality and templates; popular with agencies and publishers.
-
-
-
-- **[GetResponse](https://www.getresponse.com/)**  
-
-  Email marketing and automation platform with landing pages, webinars, and ecommerce integrations.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Newsletter & Mailing List Managers
-
-
-
-- **[Listmonk](https://github.com/knadh/listmonk)**  
-
-  The most modern open-source **newsletter and mailing list manager** available (AGPLv3, Go + Vue) . Ships as a **single binary** with Postgres as the only dependency; handles millions of subscribers across single and double opt-in lists with SQL-based segmentation . Features built-in analytics (opens, clicks, bounces), multi-threaded high-throughput sending with per-SMTP rate limiting, dynamic Go templates, a visual drag-and-drop email builder, transactional mail API, OIDC SSO, and a media library with S3 support . **The strongest choice for developers wanting a fast, modern, low-maintenance newsletter platform**—pair with Amazon SES or another sending provider for deliverability .
-
-
-
-- **[phpList](https://github.com/phpList/phplist3)**  
-
-  The **longest-standing open-source email marketing manager** (AGPLv3, PHP) . Supports campaigns, subscriber lists with attribute data, personalization placeholders, bounce handling, and campaign statistics (opens, clicks, bounces) . Actively maintained with no license fee, deployed on sites handling up to millions of recipients . **The safest no-strings option with a proven track record**—the interface is utilitarian and advanced features often require plugins, but it keeps running .
-
-
-
-- **[Keila](https://github.com/pentacent/keila)**  
-
-  100% open-source newsletter tool (AGPLv3, Elixir) made in Germany and hosted in the EU . Features contact management, sign-up forms, and newsletter campaign creation with **no proprietary premium features**—the community edition is complete . Docker image available for self-hosting. **A clean, privacy-focused alternative** for teams wanting a simple newsletter tool without vendor lock-in .
-
-
-
-- **[SendPortal](https://github.com/mettle/sendportal)**  
-
-  Laravel-based open-source newsletter platform with a modern UI . Supports **multiple sending providers** (AWS SES, Postmark, SendGrid, Mailgun, SMTP, Mailjet), multiple workspaces for agency use, built-in test tools, REST API, and **unlimited users, subscribers, and messages** . **Best for PHP/Laravel teams** wanting a more current-looking interface than older PHP tools .
-
-
-
-### Marketing Automation
-
-
-
-- **[Mautic](https://github.com/mautic/mautic)**  
-
-  The **world's largest open-source marketing automation platform** (PHP/Symfony, community-owned with no commercial entity behind it) . Features a **visual campaign builder with conditional branching**, lead scoring and stages, dynamic content based on subscriber behavior, landing page builder, form builder feeding into automated sequences, and native integrations with WordPress, Salesforce, HubSpot, Zoho CRM, and Microsoft Dynamics . Self-hosted edition is **unrestricted and free**; managed hosting available from €247.50/mo . **The strongest open-source option for behavior-based automation** with email as one channel among several—but it has a steeper learning curve and needs more server resources at scale .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Mailtrain** — Node.js-based newsletter tool with list management and campaign sending; a lighter alternative to Mautic for pure email campaigns.
-
-- **Dada Mail** — Perl-based mailing list manager with campaign tools and a long history; suitable for smaller lists.
-
-- **OpenEMM** — Java-based enterprise email marketing platform from AGNITAS; free beyond hosting costs, with more enterprise-grade features than lightweight tools .
-
-
-
-**Frameworks for building custom systems**: For **fast, modern newsletter sending**, Listmonk with Amazon SES is the strongest stack . For **behavior-based marketing automation**, Mautic provides the deepest capabilities . For a **simple, complete newsletter tool**, Keila offers clean AGPLv3 software with no premium tiers . For **PHP/Laravel teams**, SendPortal provides a modern UI with multi-provider support . Deliverability (SPF, DKIM, DMARC, IP reputation) must be handled separately through your sending provider regardless of platform choice .
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Email marketing platforms handling subscriber data must comply with applicable privacy regulations (GDPR, CCPA, CAN-SPAM) including consent tracking, unsubscribe handling, and data retention policies.
-
-- **Open-source email marketing is mature for campaign logic and list management**—Listmonk, phpList, Keila, and Mautic provide production-ready platforms . However, **deliverability infrastructure** (IP reputation, inbox placement, feedback loops) is not solved by open-source software alone; you must pair with a reputable sending provider and properly configure authentication (SPF, DKIM, DMARC) .
-
-- Verify license terms for commercial use; Listmonk, phpList, Keila, and Mautic use AGPLv3, while SendPortal is open-source (check repository).
-
-
+</div>
 
 ---
 
+## 📑 Table of Contents
 
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [Top Open-Source Campaign Engines (Ranked by Stars)](#top-open-source-campaign-engines-ranked-by-stars)
+  - [Architectural Stacks & Deliverability Infrastructure](#architectural-stacks--deliverability-infrastructure)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer & Compliance](#️-disclaimer--compliance)
 
-**Made for email marketers, growth teams, newsletter operators, and marketing automation engineers.**  
+---
 
-Let's make email marketing more open, but with clear eyes about the deliverability infrastructure that software alone cannot guarantee.
+## 🌐 Sector Overview & Market Dynamics
+
+The global email marketing software market is estimated at approximately **$10.5 billion to $13.2 billion** and is projected to expand to over **$25 billion** by the early 2030s at an 11–13% CAGR. 
+
+The sector exhibits **moderate fragmentation with tiered concentration**: while broad distribution and self-serve tiers are anchored by multi-billion-dollar enterprise giants like Shopify, Intuit (Mailchimp), and Klaviyo, no single player commands an absolute monopoly or "winner-take-all" position. High market fragmentation persists across niche vectors—such as direct-to-consumer (DTC) ecommerce triggers, B2B workflow orchestration, creator newsletters, and high-performance, self-hosted privacy-focused open-source engines.
+
+---
+
+## 🏢 SaaS & Hosted Platforms
+
+| Rank | Platform | Scale (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Free Trial Limits | Key Specialization & Core Capabilities |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | **[Shopify Email](https://www.shopify.com/email)** | **~$100B+ Market Cap** ($7.06B+ Ann. Revenue) | $1.00 per 1,000 emails beyond free allocation | **10,000 free manual and automated emails/month** to start on any active Shopify plan | Deep native ecommerce integration, automated checkout abandonment flows, dynamic inventory cards. |
+| 2 | **[Mailchimp](https://mailchimp.com/)** *(Intuit)* | **~$12B Acquisition** (~$1.4B+ ARR under Intuit) | $13.00 / month (Essentials, 500 contacts) | **Free tier forever**: Up to 500 contacts & 1,000 monthly email sends (500 daily send limit) | Industry standard for SMBs; pre-built templates, CRM-lite contacts segmentation, generative subject lines. |
+| 3 | **[Klaviyo](https://www.klaviyo.com/)** | **~$7.5B - $9B Market Cap** (~$930M+ ARR) | $20.00 / month (500 contacts) | **Free tier forever**: Up to 250 contacts & 500 email sends (includes 150 free SMS/MMS credits) | Premier ecommerce predictive data platform with real-time churn risk, multi-channel automated flows, and RFM scoring. |
+| 4 | **[Brevo](https://www.brevo.com/)** *(formerly Sendinblue)* | **~$1.0B Valuation** (~$140M+ ARR) | $9.00 / month (Starter, 5,000 emails/mo) | **Free tier forever**: 300 emails/day (~9,000 emails/mo) with unlimited contact storage | Unified omnichannel marketing platform combining transactional email APIs, newsletter campaigns, SMS, WhatsApp, and CRM. |
+| 5 | **[ActiveCampaign](https://www.activecampaign.com/)** | **~$3.0B+ Valuation** (~$300M+ ARR) | $15.00 / month (Starter plan, paid annually) | **14-day free trial**: Access up to 100 contacts & 100 email sends with full automation builder testing | Visual drag-and-drop logic builder, conditional goal triggers, predictive lead scoring, and deep multi-app webhook sync. |
+| 6 | **[Constant Contact](https://www.constantcontact.com/)** | **~$1.2B Acquisition** (~$350M+ ARR) | $12.00 / month (Lite, up to 500 contacts) | **30-day free trial** with full feature access and up to 100 email sends (US/Canada free trial model) | Streamlined small-business newsletters, event ticketing, social media campaign scheduler, and contact list imports. |
+| 7 | **[Campaign Monitor](https://www.campaignmonitor.com/)** *(Marigold)* | **~$800M+ Parent Valuation** (~$180M+ ARR) | $11.00 / month (Basic, up to 500 contacts) | **Free test account**: Send campaigns to up to 5 test recipients with unrestricted access to template designer | High-fidelity pixel-perfect responsive email builder, agency sub-account management, and locked-brand templates. |
+| 8 | **[GetResponse](https://www.getresponse.com/)** | **~$300M - $500M Est. Valuation** (~$75M+ ARR) | $15.60 / month (Email Marketing, 1,000 contacts) | **30-day free trial**: Up to 2,500 contacts and unlimited sending to test autoresponders and builder | Full-funnel digital marketing suite with autoresponders, integrated webinars, conversion landing pages, and AI creators. |
+| 9 | **[Omnisend](https://www.omnisend.com/)** | **~$200M - $300M Est. Valuation** (~$55M+ ARR) | $16.00 / month (Standard, 500 contacts) | **Free tier forever**: Up to 250 contacts & 500 emails/month (plus 60 international SMS credits) | Specialized DTC omnichannel automation with 1-click product pickers, scratch-card coupons, and behavioral push notifications. |
+| 10 | **[Drip](https://www.drip.com/)** | **~$100M - $200M Est. Valuation** (~$35M+ ARR) | $39.00 / month (up to 2,500 contacts) | **14-day free trial**: Full access to all behavioral triggers and automated workflows with up to 2,500 test contacts | Precision revenue attribution and lifecycle sequence orchestration optimized specifically for high-growth online merchants. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Open-source email marketing platforms deliver data sovereignty, zero per-subscriber markups, and unbounded extensibility. Deploy these engines alongside dedicated sending infrastructure (such as Amazon SES, Postmark, Mailgun, or Stalwart Mail Server) to achieve enterprise-tier throughput and inbox placement.
+
+### Top Open-Source Campaign Engines (Ranked by Stars)
+
+| Repo | Stars | Language / Stack | License | Description & Architectural Highlights |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Ghost](https://github.com/TryGhost/Ghost)** | [![GitHub stars](https://img.shields.io/github/stars/TryGhost/Ghost?style=social&color=white)](https://github.com/TryGhost/Ghost/stargazers) | Node.js / JavaScript | MIT | Full-featured modern publishing platform and newsletter delivery network with native membership subscriptions and custom email cards. |
+| **[Listmonk](https://github.com/knadh/listmonk)** | [![GitHub stars](https://img.shields.io/github/stars/knadh/listmonk?style=social&color=white)](https://github.com/knadh/listmonk/stargazers) | Go / Vue.js | AGPLv3 | High-performance, low-footprint mailing list and newsletter manager packed into a single binary with PostgreSQL backend; handles millions of subscribers at blazing speeds. |
+| **[Postal](https://github.com/postalserver/postal)** | [![GitHub stars](https://img.shields.io/github/stars/postalserver/postal?style=social&color=white)](https://github.com/postalserver/postal/stargazers) | Ruby / MariaDB | GPLv3 | Complete full-featured mail delivery platform for incoming and outgoing transactional and marketing email; self-hosted alternative to SendGrid and Mailgun. |
+| **[BillionMail](https://github.com/Billionmail/BillionMail)** | [![GitHub stars](https://img.shields.io/github/stars/Billionmail/BillionMail?style=social&color=white)](https://github.com/Billionmail/BillionMail/stargazers) | Go / Web | GPLv3 | Self-hosted mail server, newsletter distribution platform, and bulk marketing suite designed to operate without monthly licensing constraints. |
+| **[Mautic](https://github.com/mautic/mautic)** | [![GitHub stars](https://img.shields.io/github/stars/mautic/mautic?style=social&color=white)](https://github.com/mautic/mautic/stargazers) | PHP / Symfony | GPLv3 | Enterprise-grade marketing automation system featuring visual conditional logic flows, lead scoring, asset gating, and omnichannel CRM synchronization. |
+| **[Mailtrain](https://github.com/Mailtrain-org/mailtrain)** | [![GitHub stars](https://img.shields.io/github/stars/Mailtrain-org/mailtrain?style=social&color=white)](https://github.com/Mailtrain-org/mailtrain/stargazers) | Node.js / MySQL | GPLv3 | Modular newsletter application built on Node.js and MySQL; supports large subscriber lists, custom fields, click-rate analytics, and GPG encryption. |
+| **[Mail-for-Good](https://github.com/freeCodeCamp/mail-for-good)** | [![GitHub stars](https://img.shields.io/github/stars/freeCodeCamp/mail-for-good?style=social&color=white)](https://github.com/freeCodeCamp/mail-for-good/stargazers) | Node.js / React | MIT | freeCodeCamp's battle-tested fast email campaign management tool powered by Amazon SES to dispatch millions of emails at negligible cost. |
+| **[Keila](https://github.com/pentacent/keila)** | [![GitHub stars](https://img.shields.io/github/stars/pentacent/keila?style=social&color=white)](https://github.com/pentacent/keila/stargazers) | Elixir / Phoenix | AGPLv3 | Modern, privacy-focused newsletter service engineered with Elixir and PostgreSQL; completely free of tracking pixels or proprietary tier-locks. |
+| **[SendPortal](https://github.com/mettle/sendportal)** | [![GitHub stars](https://img.shields.io/github/stars/mettle/sendportal?style=social&color=white)](https://github.com/mettle/sendportal/stargazers) | PHP / Laravel | MIT | Sleek, multi-tenant email campaign and subscriber manager with built-in integrations for AWS SES, Postmark, SendGrid, Mailjet, and generic SMTP relays. |
+| **[Notifuse](https://github.com/Notifuse/notifuse)** | [![GitHub stars](https://img.shields.io/github/stars/Notifuse/notifuse?style=social&color=white)](https://github.com/Notifuse/notifuse/stargazers) | Python / TypeScript | AGPLv3 | Self-hosted email automation and newsletter platform featuring visual MJML responsive editing, Liquid templating, and multi-provider load balancing. |
+| **[Forward Email](https://github.com/forwardemail/forwardemail.net)** | [![GitHub stars](https://img.shields.io/github/stars/forwardemail/forwardemail.net?style=social&color=white)](https://github.com/forwardemail/forwardemail.net/stargazers) | JavaScript / Node.js | AGPLv3 | Privacy-first open-source encrypted email forwarding service and marketing relay infrastructure with 100% transparent code. |
+| **[phpList](https://github.com/phpList/phplist3)** | [![GitHub stars](https://img.shields.io/github/stars/phpList/phplist3?style=social&color=white)](https://github.com/phpList/phplist3/stargazers) | PHP / MariaDB | AGPLv3 | Veteran, rock-solid open-source mailing list manager deployed by hundreds of thousands of administrators for high-volume email dissemination. |
+| **[Colossus](https://github.com/vitorfs/colossus)** | [![GitHub stars](https://img.shields.io/github/stars/vitorfs/colossus?style=social&color=white)](https://github.com/vitorfs/colossus/stargazers) | Python / Django | MIT | Clean and lightweight self-hosted email marketing and newsletter web application built on Django, Celery, and PostgreSQL. |
+| **[UZonMail](https://github.com/uyoufu/UZonMail)** | [![GitHub stars](https://img.shields.io/github/stars/uyoufu/UZonMail?style=social&color=white)](https://github.com/uyoufu/UZonMail/stargazers) | Go / Vue.js | AGPLv3 | Enterprise mass-mailing and EDM platform featuring multi-threading, mailbox warmups, dynamic template variables, and cross-platform desktop/server support. |
+| **[Camp](https://github.com/codersgyan/camp)** | [![GitHub stars](https://img.shields.io/github/stars/codersgyan/camp?style=social&color=white)](https://github.com/codersgyan/camp/stargazers) | Go | MIT | Minimalist, self-hosted newsletter platform in Go engineered for simplicity, low resource overhead, and straightforward deployment. |
+
+---
+
+### 🛠️ Architectural Stacks & Deliverability Infrastructure
+
+Self-hosting an email campaign engine decouples subscriber data management from the message delivery layer. To ensure 99%+ deliverability into recipient inboxes:
+
+1. **Campaign & List Control Layer**: Deploy **[Listmonk](https://github.com/knadh/listmonk)**, **[Keila](https://github.com/pentacent/keila)**, or **[Mautic](https://github.com/mautic/mautic)** for contact segmentation, unsubscribes, bounce handling, and automated campaign workflows.
+2. **Delivery & SMTP Transport Layer**: Pair self-hosted engines with hardened delivery infrastructure:
+   - **Cloud SMTP Relays**: Amazon SES ($0.10 per 1,000 emails), Postmark, SendGrid, or Brevo SMTP.
+   - **Self-Hosted Mail Relays**: **[Postal](https://github.com/postalserver/postal)** or **[Stalwart Mail Server](https://github.com/stalwartlabs/mail-server)**.
+3. **Authentication & Compliance Standard Checklist**:
+   - 🔒 **SPF (Sender Policy Framework)**: Authorizes designated relay IP addresses.
+   - 🔑 **DKIM (DomainKeys Identified Mail)**: Cryptographically verifies sender authenticity.
+   - 🛡️ **DMARC (Domain-based Message Authentication, Reporting & Conformance)**: Enforces `p=quarantine` or `p=reject` policies.
+   - ⚡ **One-Click Unsubscribe (RFC 8058)**: Essential header requirement for high deliverability with Google Workspace and Yahoo Mail.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! Help expand this ecosystem reference:
+
+1. 🍴 **Fork the repository** to your GitHub profile.
+2. 📝 **Add or update an entry** in `README.md` keeping formatting intact:
+   - SaaS platforms must detail current starting pricing, specific free tier limits, and corporate scale.
+   - Open-source additions must include language, license, and the official social star badge.
+3. 🚀 **Submit a concise Pull Request** describing your additions.
+
+---
+
+## ⚖️ Disclaimer & Compliance
+
+- This list is **community-curated** for educational, technical, and architectural reference.
+- Sending bulk marketing messages mandates strict compliance with privacy and communications acts (**GDPR, CAN-SPAM, CCPA, CASL**), explicit double opt-in consent, and automated suppression processing.
+- All trademarks and product names belong to their respective corporate owners.
+
+---
+
+<div align="center">
+
+**[⭐ Star this repository on GitHub](https://github.com/ishandutta2007/Awesome-Email-Marketing-Platform) if you find it helpful!**
+
+Made with ❤️ for marketers, engineers, and growth builders worldwide.
+
+</div>
